@@ -1,6 +1,7 @@
 import cv2
 import csv
 import numpy as np
+import time
 vcCount = 0
 width = 256
 height = 128
@@ -19,3 +20,4 @@ while True:
     key = cv2.waitKey(1) & 0xFF
     if key == ord("q"):
         break
+    time.sleep(0.5)
