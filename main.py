@@ -4,7 +4,7 @@ import numpy as np
 import time
 vcCount = 0
 width = 256
-height = 128
+height = 144
 while True:
     if vcCount!=1:
         vc = cv2.VideoCapture(0)
