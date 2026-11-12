@@ -12,6 +12,7 @@ while True:
     rval, frame = vc.read()
     frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     np_array = cv2.resize(frame, (width, height))
+    frame = cv2.resize(frame, (width, height))
     cv2.imshow('Cool Skibidi Sigma App Name', frame)
     with open("videoFeed.csv", "w", newline="") as f:
         writer = csv.writer(f)
